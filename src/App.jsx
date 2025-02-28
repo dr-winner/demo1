@@ -1,13 +1,15 @@
-import Count from "./components/Count"
+import Header from "./components/Header"
+import Todo from "./components/Todo"
+import './App.css'
 
 
 function App() {
 
   return (
-    <>
-     {/* < Hello name="Winner" role="Student" age="15"/> */}
-     <Count/>
-    </>
+    <div className="App">
+      <Header />
+      <Todo />
+    </div>
   )
 }
 

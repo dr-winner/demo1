@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Todo />
     </div>
-  )
+  );
 }
 
 export default App

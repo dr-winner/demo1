@@ -1,14 +1,14 @@
 import { useState } from "react";
-import TodoItem from "./TodoItem";
 import Form from "./Form";
+import TodoList from "./TodoList";
 
-export default function Todo({ name, age, role }) {
+export default function Todo() {
     const [todos, setTodos] = useState([]);
-    
-    return <>
-        <Form/>
-        {todos.map((item) => (<div>
-            <TodoItem key={item} item={item} />
-        </div>))}
-    </>
+
+    return (
+        <div>
+            <Form todos={todos} setTodos={setTodos} />
+            <TodoList todos={todos} />
+        </div>
+    );
 }

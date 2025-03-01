@@ -11,8 +11,10 @@ export default function Form({ todos, setTodos }) {
     };
     return <div className={styles.todoForm}>
         <form onSubmit={handleSubmit}>
-            <input onChange={(e) => setTodo(e.target.value)} value={todo} type="text" />
-            <button type="submit">+</button>
+        <div className={styles.inputContainer}>
+            <input className={styles.modernInput} onChange={(e) => setTodo(e.target.value)} value={todo} type="text" placeholder="Type here..."/>
+            <button className={styles.modernBtn} type="submit">+</button>
+            </div>
         </form>
     </div>
 }

@@ -1,0 +1,31 @@
+.itemName{
+font-weight: bolder;
+padding: 20px;
+}
+
+.item {
+width: 500px;
+color: #353935;
+font-size: 20px;
+margin: 0 auto;
+}
+
+.line{
+    border: 1px solid #b2a7b5;
+}
+.xBtn{
+    float: right;
+    padding: 12px 20px;
+    border: none;
+    color: antiquewhite;
+    background-color: blueviolet;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: -15px 10px;
+}
+
+.xBtn:hover{
+    background-color: rgb(167, 102, 228);
+    transition: 0.3s;
+    /* font-weight: bold; */
+}
